@@ -13,19 +13,8 @@ class loginFormController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var loginInput: UITextField!
-    @IBAction func bottomPush(_ sender: Any) {
-        // Получаем текст логина
-              let login = loginInput.text!
-              // Получаем текст-пароль
-              let password = passwordInput.text!
-              
-              // Проверяем, верны ли они
-              if login == "Пожалуйста" && password == "Работай" {
-                  print("успешная авторизация")
-              } else {
-                  print("неуспешная авторизация")
-              }
-    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -80,7 +69,31 @@ class loginFormController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-}
+    func CheckUserDate() -> Bool {
+               let login = loginInput.text!
+               let password = passwordInput.text!
+             if login == "adm" && password == "123" { return true  }
+             else {
+                   return false }
+     }
     
+  override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    if identifier == "GoodLogin" {
+        let isValed = CheckUserDate()
+        if !isValed {
+            loginError()
+            passwordInput.text = ""
+            }
+        return isValed
+        }
+    return true
+    }
+    
+    func loginError() {
+        let alertError = UIAlertController(title: "Ошибка", message: "Введены некоректные данные", preferredStyle: .alert)
+        let actionError = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertError.addAction(actionError)
+        present(alertError, animated: true, completion: nil)
+    }
+}
 
-  
