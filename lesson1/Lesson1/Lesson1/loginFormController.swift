@@ -72,7 +72,7 @@ class loginFormController: UIViewController {
     func CheckUserDate() -> Bool {
                let login = loginInput.text!
                let password = passwordInput.text!
-             if login == "adm" && password == "123" { return true  }
+             if login == "" && password == "" { return true  }
              else {
                    return false }
      }
