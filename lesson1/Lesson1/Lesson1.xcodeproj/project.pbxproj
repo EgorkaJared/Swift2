@@ -11,6 +11,9 @@
 		7F17A55B249E83E000BE22FB /* Добрыня.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A558249E83DF00BE22FB /* Добрыня.png */; };
 		7F17A55C249E83E000BE22FB /* Илья.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A559249E83E000BE22FB /* Илья.png */; };
 		7F17A55D249E83E000BE22FB /* Алеша.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A55A249E83E000BE22FB /* Алеша.png */; };
+		7F17A563249E90D000BE22FB /* Кони.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A560249E90D000BE22FB /* Кони.png */; };
+		7F17A564249E90D000BE22FB /* Принцессы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A561249E90D000BE22FB /* Принцессы.png */; };
+		7F17A565249E90D000BE22FB /* Драконы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A562249E90D000BE22FB /* Драконы.png */; };
 		7FA7E7CA249DFFB100641F9D /* TableFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7E7C9249DFFB100641F9D /* TableFriend.swift */; };
 		7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */; };
 		7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC04249E3490004770D1 /* oneUser.swift */; };
@@ -31,7 +34,10 @@
 		7F17A558249E83DF00BE22FB /* Добрыня.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Добрыня.png"; path = "Lesson1/Model/PhotoUser/Добрыня.png"; sourceTree = SOURCE_ROOT; };
 		7F17A559249E83E000BE22FB /* Илья.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Илья.png"; path = "Lesson1/Model/PhotoUser/Илья.png"; sourceTree = SOURCE_ROOT; };
 		7F17A55A249E83E000BE22FB /* Алеша.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Алеша.png"; path = "Lesson1/Model/PhotoUser/Алеша.png"; sourceTree = SOURCE_ROOT; };
-		7FA7E7C9249DFFB100641F9D /* TableFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFriend.swift; sourceTree = "<group>"; };
+		7F17A560249E90D000BE22FB /* Кони.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Кони.png"; sourceTree = "<group>"; };
+		7F17A561249E90D000BE22FB /* Принцессы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Принцессы.png"; sourceTree = "<group>"; };
+		7F17A562249E90D000BE22FB /* Драконы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Драконы.png"; sourceTree = "<group>"; };
+		7FA7E7C9249DFFB100641F9D /* TableFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableFriend.swift; path = /Users/Jared/Desktop/Swift2/Swift2/lesson1/Lesson1/Lesson1/TableFriend.swift; sourceTree = "<absolute>"; };
 		7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFriend.swift; sourceTree = "<group>"; };
 		7FD8CC04249E3490004770D1 /* oneUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneUser.swift; sourceTree = "<group>"; };
 		7FD8CC06249E3B01004770D1 /* oneGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneGroup.swift; sourceTree = "<group>"; };
@@ -59,9 +65,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F17A55F249E902300BE22FB /* PhotoGroup */ = {
+			isa = PBXGroup;
+			children = (
+				7F17A562249E90D000BE22FB /* Драконы.png */,
+				7F17A560249E90D000BE22FB /* Кони.png */,
+				7F17A561249E90D000BE22FB /* Принцессы.png */,
+			);
+			path = PhotoGroup;
+			sourceTree = "<group>";
+		};
 		7FD8CC03249E3350004770D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F17A55F249E902300BE22FB /* PhotoGroup */,
 				7FD8CC0E249E5645004770D1 /* PhotoUser */,
 				7FD8CC04249E3490004770D1 /* oneUser.swift */,
 				7FD8CC06249E3B01004770D1 /* oneGroup.swift */,
@@ -177,6 +194,9 @@
 				7F17A55B249E83E000BE22FB /* Добрыня.png in Resources */,
 				7FDB3DB2249257E3002B6620 /* LaunchScreen.storyboard in Resources */,
 				7F17A55D249E83E000BE22FB /* Алеша.png in Resources */,
+				7F17A563249E90D000BE22FB /* Кони.png in Resources */,
+				7F17A565249E90D000BE22FB /* Драконы.png in Resources */,
+				7F17A564249E90D000BE22FB /* Принцессы.png in Resources */,
 				7F17A55C249E83E000BE22FB /* Илья.png in Resources */,
 				7FDB3DAF249257E3002B6620 /* Assets.xcassets in Resources */,
 				7FDB3DAD249257DD002B6620 /* Main.storyboard in Resources */,

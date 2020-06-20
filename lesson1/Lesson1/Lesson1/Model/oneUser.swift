@@ -12,11 +12,11 @@ class oneUser {
     
     var firstName: String
     var lastName: String
-    //var photo: UIImage
+    var photo: UIImage
     
-    init(firstName:String, lastName:String) {
+    init(firstName:String, lastName:String,photo: UIImage) {
         self.firstName = firstName
         self.lastName = lastName
-        //self.photo = photo
+        self.photo = photo
     }
 }

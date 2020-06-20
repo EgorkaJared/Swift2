@@ -13,7 +13,9 @@ class TableAllGroup: UITableViewController {
     
    
     let allGroup: [oneGroup] =
-    [oneGroup(groupName: "Драконы"),oneGroup(groupName: "Принцессы"),oneGroup(groupName: "Кони") ]
+    [oneGroup(groupName: "Драконы",photo:UIImage(named: "Драконы.png")!),
+     oneGroup(groupName: "Принцессы", photo:UIImage(named: "Принцессы.png")!),
+    oneGroup(groupName: "Кони", photo:UIImage(named: "Кони.png")!)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,8 @@ class TableAllGroup: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCellGroup", for: indexPath) as! TableCellGroup
         
         cell.groupName.text = allGroup[indexPath.row].groupName
+        
+        cell.groupPhoto.image = allGroup[indexPath.row].photo
         
 
         

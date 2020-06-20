@@ -44,6 +44,8 @@ class TableMyGroup: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableVCellMyGroup", for: indexPath) as! TableVCellMyGroup
         
         cell.myGroopName .text = myGroop[indexPath.row].groupName
+        
+        cell.MyGropuPhoto.image = myGroop[indexPath.row].photo
 
         // Configure the cell...
 

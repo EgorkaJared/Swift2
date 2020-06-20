@@ -11,12 +11,11 @@ import UIKit
 class oneGroup {
     
     var groupName: String
-    //var photo: UIImage
+    var photo: UIImage
   
-    init(groupName:String) {
+    init(groupName:String, photo: UIImage) {
         self.groupName = groupName
-        
-        //self.photo = photo
+        self.photo = photo
         }
     }
     

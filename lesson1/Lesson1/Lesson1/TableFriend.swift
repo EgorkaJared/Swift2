@@ -11,9 +11,9 @@ import UIKit
 class TableFriend: UITableViewController {
     
     let allFriend: [oneUser] =
-    [oneUser(firstName: "Алеша", lastName: "Попович"),
-     oneUser(firstName: "Добрыня", lastName: "Никитич"),
-     oneUser(firstName: "Илья", lastName: "Муромец")
+   [oneUser(firstName: "Алеша", lastName: "Попович", photo: UIImage(named: "Алеша.png")!),
+    oneUser(firstName: "Добрыня", lastName: "Никитич", photo: UIImage(named: "Добрыня.png")!),
+    oneUser(firstName: "Илья", lastName: "Муромец", photo: UIImage(named: "Илья.png")!)
     ]
 
     override func viewDidLoad() {
@@ -44,7 +44,9 @@ class TableFriend: UITableViewController {
 
         // Configure the cell...
         cell.nameFriend.text = ("\(allFriend[indexPath.row].firstName) \(allFriend[indexPath.row].lastName)")
+//        cell.photoFriend.image. = ("\(allFriend[indexPath.row].photo)")
 
+        cell.photoFriend.image = (allFriend[indexPath.row].photo)
         return cell
     }
 
@@ -93,5 +95,5 @@ class TableFriend: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
