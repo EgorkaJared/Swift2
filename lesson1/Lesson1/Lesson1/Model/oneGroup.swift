@@ -18,4 +18,14 @@ class oneGroup {
         self.photo = photo
         }
     }
-    
+// не стал описывать все тк нужно было только спавнениеб пока что
+extension oneGroup: Comparable{
+static func < (lhs: oneGroup, rhs: oneGroup) -> Bool{
+    return lhs.groupName < rhs.groupName
+    }
+
+static func == (lhs: oneGroup, rhs: oneGroup) -> Bool{
+    return lhs.groupName == rhs.groupName
+    }
+}
+

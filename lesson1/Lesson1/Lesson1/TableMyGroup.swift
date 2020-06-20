@@ -22,7 +22,7 @@ class TableMyGroup: UITableViewController {
         
         let ChengeGroup = allgroup.allGroup[indexGroup.row]
         
-        guard  !myGroop.contains(ChengeGroup.groupName) else {return}
+        guard  !myGroop.contains(ChengeGroup) else {return}
         
         myGroop.append(ChengeGroup)
         tableView.reloadData()
