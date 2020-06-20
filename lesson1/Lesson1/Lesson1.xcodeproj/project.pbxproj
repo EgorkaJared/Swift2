@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F17A557249E78D500BE22FB /* TableVCellMyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */; };
+		7F17A55B249E83E000BE22FB /* Добрыня.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A558249E83DF00BE22FB /* Добрыня.png */; };
+		7F17A55C249E83E000BE22FB /* Илья.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A559249E83E000BE22FB /* Илья.png */; };
+		7F17A55D249E83E000BE22FB /* Алеша.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A55A249E83E000BE22FB /* Алеша.png */; };
 		7FA7E7CA249DFFB100641F9D /* TableFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7E7C9249DFFB100641F9D /* TableFriend.swift */; };
 		7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */; };
 		7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC04249E3490004770D1 /* oneUser.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCellMyGroup.swift; sourceTree = "<group>"; };
+		7F17A558249E83DF00BE22FB /* Добрыня.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Добрыня.png"; path = "Lesson1/Model/PhotoUser/Добрыня.png"; sourceTree = SOURCE_ROOT; };
+		7F17A559249E83E000BE22FB /* Илья.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Илья.png"; path = "Lesson1/Model/PhotoUser/Илья.png"; sourceTree = SOURCE_ROOT; };
+		7F17A55A249E83E000BE22FB /* Алеша.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Алеша.png"; path = "Lesson1/Model/PhotoUser/Алеша.png"; sourceTree = SOURCE_ROOT; };
 		7FA7E7C9249DFFB100641F9D /* TableFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFriend.swift; sourceTree = "<group>"; };
 		7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFriend.swift; sourceTree = "<group>"; };
 		7FD8CC04249E3490004770D1 /* oneUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneUser.swift; sourceTree = "<group>"; };
@@ -64,6 +72,9 @@
 		7FD8CC0E249E5645004770D1 /* PhotoUser */ = {
 			isa = PBXGroup;
 			children = (
+				7F17A55A249E83E000BE22FB /* Алеша.png */,
+				7F17A558249E83DF00BE22FB /* Добрыня.png */,
+				7F17A559249E83E000BE22FB /* Илья.png */,
 			);
 			path = PhotoUser;
 			sourceTree = "<group>";
@@ -94,6 +105,7 @@
 				7FD8CC0A249E3C7E004770D1 /* TableAllGroup.swift */,
 				7FD8CC0C249E4623004770D1 /* TableMyGroup.swift */,
 				7FD8CC08249E3BF5004770D1 /* TableCellGroup.swift */,
+				7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */,
 				7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */,
 				7FDB3DAB249257DD002B6620 /* Main.storyboard */,
 				7FDB3DAE249257E3002B6620 /* Assets.xcassets */,
@@ -162,7 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F17A55B249E83E000BE22FB /* Добрыня.png in Resources */,
 				7FDB3DB2249257E3002B6620 /* LaunchScreen.storyboard in Resources */,
+				7F17A55D249E83E000BE22FB /* Алеша.png in Resources */,
+				7F17A55C249E83E000BE22FB /* Илья.png in Resources */,
 				7FDB3DAF249257E3002B6620 /* Assets.xcassets in Resources */,
 				7FDB3DAD249257DD002B6620 /* Main.storyboard in Resources */,
 			);
@@ -181,6 +196,7 @@
 				7FDB3DBE249407EC002B6620 /* loginFormController.swift in Sources */,
 				7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */,
 				7FD8CC09249E3BF5004770D1 /* TableCellGroup.swift in Sources */,
+				7F17A557249E78D500BE22FB /* TableVCellMyGroup.swift in Sources */,
 				7FA7E7CA249DFFB100641F9D /* TableFriend.swift in Sources */,
 				7FD8CC07249E3B01004770D1 /* oneGroup.swift in Sources */,
 				7FD8CC0D249E4623004770D1 /* TableMyGroup.swift in Sources */,

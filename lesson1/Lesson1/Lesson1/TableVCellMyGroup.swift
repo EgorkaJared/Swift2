@@ -1,5 +1,5 @@
 //
-//  TableCellGroup.swift
+//  TableVCellMyGroup.swift
 //  Lesson1
 //
 //  Created by Егор Ненастьев on 20.06.2020.
@@ -8,18 +8,13 @@
 
 import UIKit
 
-class TableCellGroup: UITableViewCell {
-    
-    @IBOutlet weak var groupName: UILabel!
-    @IBOutlet weak var groupPhoto: UIImageView!
-    
-    
-    
+class TableVCellMyGroup: UITableViewCell {
+   
+    @IBOutlet weak var myGroopName: UILabel!
+    @IBOutlet weak var MyGropuPhoto: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
         // Initialization code
     }
 
