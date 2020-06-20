@@ -116,6 +116,28 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPo-VX-uDF" id="1Ok-kG-BzV">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PG-LL-JZk">
+                                            <rect key="frame" x="20" y="11.5" width="324" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWo-Pp-voH">
+                                            <rect key="frame" x="364" y="7" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="9rx-ac-GzG"/>
+                                                <constraint firstAttribute="height" constant="30" id="fiN-Ac-eEd"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1PG-LL-JZk" firstAttribute="leading" secondItem="1Ok-kG-BzV" secondAttribute="leading" constant="20" id="5Lh-RR-VnG"/>
+                                        <constraint firstItem="UWo-Pp-voH" firstAttribute="centerY" secondItem="1Ok-kG-BzV" secondAttribute="centerY" id="6Kc-8A-fur"/>
+                                        <constraint firstItem="UWo-Pp-voH" firstAttribute="leading" secondItem="1PG-LL-JZk" secondAttribute="trailing" constant="20" id="Mbs-LU-We9"/>
+                                        <constraint firstItem="1PG-LL-JZk" firstAttribute="centerY" secondItem="1Ok-kG-BzV" secondAttribute="centerY" id="X1c-kv-4xB"/>
+                                        <constraint firstAttribute="trailing" secondItem="UWo-Pp-voH" secondAttribute="trailing" constant="20" id="kgi-j3-4qi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="r1b-Eb-dXh" kind="show" id="nvT-hs-wtc"/>
@@ -132,7 +154,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kv8-cd-D5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3472" y="-6"/>
+            <point key="canvasLocation" x="3471.0144927536235" y="-6.0267857142857144"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="kq1-2P-ehZ">
