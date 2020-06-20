@@ -15,6 +15,7 @@ class TableCellGroup: UITableViewCell {
     @IBOutlet weak var groupPhoto: UIImageView!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

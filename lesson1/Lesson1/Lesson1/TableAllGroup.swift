@@ -10,6 +10,8 @@ import UIKit
 
 class TableAllGroup: UITableViewController {
     
+    
+   
     let allGroup: [oneGroup] =
     [oneGroup(groupName: "Драконы"),oneGroup(groupName: "Принцессы"),oneGroup(groupName: "Кони") ]
 
@@ -40,6 +42,8 @@ class TableAllGroup: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCellGroup", for: indexPath) as! TableCellGroup
         
         cell.groupName.text = allGroup[indexPath.row].groupName
+        
+
         
 
         // Configure the cell...

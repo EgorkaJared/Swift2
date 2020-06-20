@@ -10,18 +10,22 @@ import UIKit
 
 class TableMyGroup: UITableViewController {
     
-    let myGroop:[oneGroup] = []
+    var myGroop:[oneGroup] = []
     
+    
+    // перемещение выбраного элемента
     @IBAction func addGroup(group: UIStoryboardSegue){
-        print(#function)
         guard
-            let allgroop = group.source as? TableAllGroup,
-            let indexGroup = allgroop.tableView.indexPathsForSelectedRows
+            let allgroup = group.source as? TableAllGroup,
+            let indexGroup = allgroup.tableView.indexPathForSelectedRow
             else {return}
         
-        let indexGroup = allgroop.allGroup[IndexPath.row]
+        let ChengeGroup = allgroup.allGroup[indexGroup.row]
         
+        myGroop.append(ChengeGroup)
+        tableView.reloadData()
     }
+    //
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,25 +34,27 @@ class TableMyGroup: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 5
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return myGroop.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCellGroupMy", for: indexPath) as! TableCellGroup
+        
+        cell.groupName?.text = myGroop[indexPath.row].groupName
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
