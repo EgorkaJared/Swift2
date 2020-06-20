@@ -9,6 +9,12 @@
 import UIKit
 
 class TableFriend: UITableViewController {
+    
+    let allFriend: [oneUser] =
+    [oneUser(firstName: "Алеша", lastName: "Попович"),
+     oneUser(firstName: "Добрыня", lastName: "Никитич"),
+     oneUser(firstName: "Илья", lastName: "Муромец")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +35,7 @@ class TableFriend: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return allFriend.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,6 +43,7 @@ class TableFriend: UITableViewController {
         TableCellFriend
 
         // Configure the cell...
+        cell.nameFriend.text = ("\(allFriend[indexPath.row].firstName) \(allFriend[indexPath.row].lastName)")
 
         return cell
     }

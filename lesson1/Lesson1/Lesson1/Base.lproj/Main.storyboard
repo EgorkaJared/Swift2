@@ -140,6 +140,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="nameFriend" destination="1PG-LL-JZk" id="Mdm-Fj-7XK"/>
+                                    <outlet property="photoFriend" destination="UWo-Pp-voH" id="alA-uH-0UK"/>
                                     <segue destination="r1b-Eb-dXh" kind="show" id="nvT-hs-wtc"/>
                                 </connections>
                             </tableViewCell>
