@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="616" y="338"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Друзья-->
         <scene sceneID="FMa-0w-j4U">
             <objects>
                 <tableViewController id="MnX-X3-oiS" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                             <outlet property="delegate" destination="MnX-X3-oiS" id="CzN-v6-xDC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="d4q-7a-FFC"/>
+                    <navigationItem key="navigationItem" title="Друзья" id="d4q-7a-FFC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kv8-cd-D5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +246,7 @@
             </objects>
             <point key="canvasLocation" x="2521.739130434783" y="640.84821428571422"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Группы-->
         <scene sceneID="3Jb-74-SQ8">
             <objects>
                 <tableViewController id="vgO-3p-9sT" sceneMemberID="viewController">
@@ -270,10 +270,10 @@
                             <outlet property="delegate" destination="vgO-3p-9sT" id="O3s-6f-CmX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="d7q-qG-rb9">
+                    <navigationItem key="navigationItem" title="Группы" id="d7q-qG-rb9">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="dMy-Dz-Pf7">
                             <connections>
-                                <segue destination="UjK-fD-tSm" kind="show" id="37S-ng-xGV"/>
+                                <segue destination="UjK-fD-tSm" kind="modal" id="37S-ng-xGV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -309,7 +309,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nd-3P-g1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4414" y="655"/>
+            <point key="canvasLocation" x="4416" y="641"/>
         </scene>
     </scenes>
     <resources>
