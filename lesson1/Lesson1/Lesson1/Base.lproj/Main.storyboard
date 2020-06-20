@@ -254,20 +254,20 @@
         <!--Группы-->
         <scene sceneID="3Jb-74-SQ8">
             <objects>
-                <tableViewController id="vgO-3p-9sT" sceneMemberID="viewController">
+                <tableViewController id="vgO-3p-9sT" customClass="TableMyGroup" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ej2-2e-B2g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qts-xp-1sG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellGroupMy" id="Qts-xp-1sG" customClass="TableCellGroup" customModule="Lesson1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qts-xp-1sG" id="XSu-bc-hhd">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -287,22 +287,48 @@
             </objects>
             <point key="canvasLocation" x="3416" y="641"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table All Froup-->
         <scene sceneID="k9u-ca-7Y2">
             <objects>
-                <tableViewController id="UjK-fD-tSm" sceneMemberID="viewController">
+                <tableViewController id="UjK-fD-tSm" customClass="TableAllFroup" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1TW-OE-qhx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jcB-2i-FLK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellGroup" id="jcB-2i-FLK" customClass="TableCellGroup" customModule="Lesson1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jcB-2i-FLK" id="PID-s1-1Qb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sL-O1-cay">
+                                            <rect key="frame" x="20" y="11.5" width="324" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3R-S2-EmX">
+                                            <rect key="frame" x="364" y="7" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="AXE-Hj-99R"/>
+                                                <constraint firstAttribute="height" constant="30" id="gY9-gh-836"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8sL-O1-cay" firstAttribute="leading" secondItem="PID-s1-1Qb" secondAttribute="leading" constant="20" id="Bfr-OB-goR"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z3R-S2-EmX" secondAttribute="trailing" constant="20" id="SVg-mY-GeB"/>
+                                        <constraint firstItem="Z3R-S2-EmX" firstAttribute="centerY" secondItem="PID-s1-1Qb" secondAttribute="centerY" id="Zt5-kN-OBo"/>
+                                        <constraint firstItem="8sL-O1-cay" firstAttribute="centerY" secondItem="PID-s1-1Qb" secondAttribute="centerY" id="dOc-cx-qMm"/>
+                                        <constraint firstItem="Z3R-S2-EmX" firstAttribute="leading" secondItem="8sL-O1-cay" secondAttribute="trailing" constant="20" id="vKv-8R-QTU"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="groupName" destination="8sL-O1-cay" id="0UO-PL-YmU"/>
+                                    <outlet property="groupPhoto" destination="Z3R-S2-EmX" id="89F-iv-U19"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -314,7 +340,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nd-3P-g1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4416" y="641"/>
+            <point key="canvasLocation" x="4415.9420289855079" y="640.84821428571422"/>
         </scene>
     </scenes>
     <resources>
