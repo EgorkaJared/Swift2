@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="3416" y="641"/>
         </scene>
-        <!--Table All Froup-->
+        <!--Table All Group-->
         <scene sceneID="k9u-ca-7Y2">
             <objects>
-                <tableViewController id="UjK-fD-tSm" customClass="TableAllFroup" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableAllGroup" id="UjK-fD-tSm" customClass="TableAllGroup" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1TW-OE-qhx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,6 +328,7 @@
                                 <connections>
                                     <outlet property="groupName" destination="8sL-O1-cay" id="0UO-PL-YmU"/>
                                     <outlet property="groupPhoto" destination="Z3R-S2-EmX" id="89F-iv-U19"/>
+                                    <segue destination="RWr-Nk-uAF" kind="unwind" unwindAction="addGroupWithGroup:" id="7I6-mO-Faj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -339,6 +340,7 @@
                     <navigationItem key="navigationItem" id="P4h-fZ-jEp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nd-3P-g1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="RWr-Nk-uAF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4415.9420289855079" y="640.84821428571422"/>
         </scene>

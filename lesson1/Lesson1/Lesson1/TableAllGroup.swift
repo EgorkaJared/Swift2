@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableAllFroup: UITableViewController {
+class TableAllGroup: UITableViewController {
     
     let allGroup: [oneGroup] =
     [oneGroup(groupName: "Драконы"),oneGroup(groupName: "Принцессы"),oneGroup(groupName: "Кони") ]

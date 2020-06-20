@@ -9,22 +9,25 @@
 import UIKit
 
 class TableMyGroup: UITableViewController {
+    
+    let myGroop:[oneGroup] = []
+    
+    @IBAction func addGroup(group: UIStoryboardSegue){
+        print(#function)
+//        guard let allgroop = group.source as? TableAllGroup else {return}
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
