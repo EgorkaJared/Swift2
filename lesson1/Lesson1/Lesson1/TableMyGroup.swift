@@ -14,7 +14,12 @@ class TableMyGroup: UITableViewController {
     
     @IBAction func addGroup(group: UIStoryboardSegue){
         print(#function)
-//        guard let allgroop = group.source as? TableAllGroup else {return}
+        guard
+            let allgroop = group.source as? TableAllGroup,
+            let indexGroup = allgroop.tableView.indexPathsForSelectedRows
+            else {return}
+        
+        let indexGroup = allgroop.allGroup[IndexPath.row]
         
     }
 
