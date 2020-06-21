@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0B7D14249F45C000EBFB9F /* CollectionPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */; };
+		7F0B7D16249F467D00EBFB9F /* CollectionCellPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */; };
 		7F17A557249E78D500BE22FB /* TableVCellMyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */; };
 		7F17A55B249E83E000BE22FB /* Добрыня.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A558249E83DF00BE22FB /* Добрыня.png */; };
 		7F17A55C249E83E000BE22FB /* Илья.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A559249E83E000BE22FB /* Илья.png */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPhoto.swift; sourceTree = "<group>"; };
+		7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellPhoto.swift; sourceTree = "<group>"; };
 		7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCellMyGroup.swift; sourceTree = "<group>"; };
 		7F17A558249E83DF00BE22FB /* Добрыня.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Добрыня.png"; path = "Lesson1/Model/PhotoUser/Добрыня.png"; sourceTree = SOURCE_ROOT; };
 		7F17A559249E83E000BE22FB /* Илья.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Илья.png"; path = "Lesson1/Model/PhotoUser/Илья.png"; sourceTree = SOURCE_ROOT; };
@@ -65,6 +69,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F0B7D11249F456000EBFB9F /* GroupView */ = {
+			isa = PBXGroup;
+			children = (
+				7FD8CC0A249E3C7E004770D1 /* TableAllGroup.swift */,
+				7FD8CC0C249E4623004770D1 /* TableMyGroup.swift */,
+				7FD8CC08249E3BF5004770D1 /* TableCellGroup.swift */,
+				7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */,
+			);
+			path = GroupView;
+			sourceTree = "<group>";
+		};
+		7F0B7D12249F457D00EBFB9F /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				7FA7E7C9249DFFB100641F9D /* TableFriend.swift */,
+				7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */,
+				7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */,
+				7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
 		7F17A55F249E902300BE22FB /* PhotoGroup */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,17 +144,13 @@
 				7FDB3DBD249407EC002B6620 /* loginFormController.swift */,
 				7FDB3DA5249257DD002B6620 /* AppDelegate.swift */,
 				7FDB3DA7249257DD002B6620 /* SceneDelegate.swift */,
-				7FA7E7C9249DFFB100641F9D /* TableFriend.swift */,
-				7FD8CC0A249E3C7E004770D1 /* TableAllGroup.swift */,
-				7FD8CC0C249E4623004770D1 /* TableMyGroup.swift */,
-				7FD8CC08249E3BF5004770D1 /* TableCellGroup.swift */,
-				7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */,
-				7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */,
-				7FDB3DAB249257DD002B6620 /* Main.storyboard */,
+				7F0B7D12249F457D00EBFB9F /* Friend */,
+				7F0B7D11249F456000EBFB9F /* GroupView */,
+				7FD8CC03249E3350004770D1 /* Model */,
 				7FDB3DAE249257E3002B6620 /* Assets.xcassets */,
+				7FDB3DAB249257DD002B6620 /* Main.storyboard */,
 				7FDB3DB0249257E3002B6620 /* LaunchScreen.storyboard */,
 				7FDB3DB3249257E3002B6620 /* Info.plist */,
-				7FD8CC03249E3350004770D1 /* Model */,
 			);
 			path = Lesson1;
 			sourceTree = "<group>";
@@ -210,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0B7D16249F467D00EBFB9F /* CollectionCellPhoto.swift in Sources */,
 				7FDB3DA6249257DD002B6620 /* AppDelegate.swift in Sources */,
 				7FDB3DA8249257DD002B6620 /* SceneDelegate.swift in Sources */,
 				7FD8CC0B249E3C7E004770D1 /* TableAllGroup.swift in Sources */,
@@ -220,6 +243,7 @@
 				7FA7E7CA249DFFB100641F9D /* TableFriend.swift in Sources */,
 				7FD8CC07249E3B01004770D1 /* oneGroup.swift in Sources */,
 				7FD8CC0D249E4623004770D1 /* TableMyGroup.swift in Sources */,
+				7F0B7D14249F45C000EBFB9F /* CollectionPhoto.swift in Sources */,
 				7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="3471.0144927536235" y="-6.0267857142857144"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Collection Photo-->
         <scene sceneID="kq1-2P-ehZ">
             <objects>
-                <collectionViewController id="r1b-Eb-dXh" sceneMemberID="viewController">
+                <collectionViewController id="r1b-Eb-dXh" customClass="CollectionPhoto" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="CX1-qg-hbh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,13 +173,27 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eHn-C9-vnV">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionCellPhoto" id="eHn-C9-vnV" customClass="CollectionCellPhoto" customModule="Lesson1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KwV-be-F8Z">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MA5-5k-gvl">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="MA5-5k-gvl" firstAttribute="height" secondItem="KwV-be-F8Z" secondAttribute="height" id="BCk-hl-aWi"/>
+                                        <constraint firstItem="MA5-5k-gvl" firstAttribute="centerX" secondItem="KwV-be-F8Z" secondAttribute="centerX" id="LCe-fj-pAW"/>
+                                        <constraint firstItem="MA5-5k-gvl" firstAttribute="centerY" secondItem="KwV-be-F8Z" secondAttribute="centerY" id="m6a-l8-I4w"/>
+                                        <constraint firstItem="MA5-5k-gvl" firstAttribute="width" secondItem="KwV-be-F8Z" secondAttribute="width" id="nCh-Xy-Y7f"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="photoCell" destination="MA5-5k-gvl" id="7gW-qj-LDa"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -191,7 +205,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wWq-DE-gND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4416" y="-6"/>
+            <point key="canvasLocation" x="4415.9420289855079" y="-6.0267857142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tQT-UR-zaQ">

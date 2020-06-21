@@ -11,9 +11,9 @@ import UIKit
 class TableFriend: UITableViewController {
     
     let allFriend: [oneUser] =
-   [oneUser(firstName: "Алеша", lastName: "Попович", photo: UIImage(named: "Алеша.png")!),
-    oneUser(firstName: "Добрыня", lastName: "Никитич", photo: UIImage(named: "Добрыня.png")!),
-    oneUser(firstName: "Илья", lastName: "Муромец", photo: UIImage(named: "Илья.png")!)
+   [oneUser(firstName: "Алеша", lastName: "Попович", photo: UIImage(named: "Алеша.png")!,allPhoto: alesha),
+    oneUser(firstName: "Добрыня", lastName: "Никитич", photo: UIImage(named: "Добрыня.png")!,allPhoto: dobrynia),
+    oneUser(firstName: "Илья", lastName: "Муромец", photo: UIImage(named: "Илья.png")!,allPhoto: ilia)
     ]
 
     override func viewDidLoad() {
@@ -86,14 +86,19 @@ class TableFriend: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+        guard
+            let photo = segue.destination as?
+            CollectionPhoto,
+            let indexPhoto = self.tableView.indexPathForSelectedRow
+            else {return}
+        
+        photo.photo = allFriend[indexPhoto.row].allPhoto
         // Pass the selected object to the new view controller.
     }
-    */
     
 }
