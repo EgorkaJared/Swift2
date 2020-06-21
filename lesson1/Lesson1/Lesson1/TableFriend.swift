@@ -18,6 +18,9 @@ class TableFriend: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //убираем ошибку конфликтов констрейнов
+        self.tableView.rowHeight = 44
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

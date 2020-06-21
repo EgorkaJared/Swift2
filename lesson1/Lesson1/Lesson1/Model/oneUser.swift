@@ -22,7 +22,7 @@ class oneUser {
         self.allPhoto = allPhoto
     }
 }
-let dobrynia = [UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!]
+let dobrynia = [UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png" )!]
 
 let alesha = [UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,]
 

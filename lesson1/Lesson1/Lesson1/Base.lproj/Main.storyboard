@@ -110,7 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellFriend" id="NPo-VX-uDF" customClass="TableCellFriend" customModule="Lesson1" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellFriend" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-VX-uDF" customClass="TableCellFriend" customModule="Lesson1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPo-VX-uDF" id="1Ok-kG-BzV">
@@ -173,7 +173,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionCellPhoto" id="eHn-C9-vnV" customClass="CollectionCellPhoto" customModule="Lesson1" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionCellPhoto" reuseIdentifier="CollectionCellPhoto" id="eHn-C9-vnV" customClass="CollectionCellPhoto" customModule="Lesson1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KwV-be-F8Z">
@@ -281,8 +281,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-IS-dnQ">
-                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-IS-dnQ">
+                                            <rect key="frame" x="20" y="11.5" width="334" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -298,8 +298,9 @@
                                     <constraints>
                                         <constraint firstItem="4ZD-8G-yuA" firstAttribute="centerY" secondItem="XSu-bc-hhd" secondAttribute="centerY" id="8iu-kC-b31"/>
                                         <constraint firstAttribute="trailing" secondItem="4ZD-8G-yuA" secondAttribute="trailing" constant="20" id="WCL-KX-4ZX"/>
-                                        <constraint firstItem="j6I-IS-dnQ" firstAttribute="leading" secondItem="XSu-bc-hhd" secondAttribute="leading" constant="10" id="bTR-eJ-TgK"/>
                                         <constraint firstItem="j6I-IS-dnQ" firstAttribute="centerY" secondItem="XSu-bc-hhd" secondAttribute="centerY" id="fs3-41-uUA"/>
+                                        <constraint firstItem="4ZD-8G-yuA" firstAttribute="leading" secondItem="j6I-IS-dnQ" secondAttribute="trailing" constant="10" id="j4Q-Bq-8Zs"/>
+                                        <constraint firstItem="j6I-IS-dnQ" firstAttribute="leading" secondItem="XSu-bc-hhd" secondAttribute="leading" constant="20" id="lIm-6t-6HP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
