@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F0B7D14249F45C000EBFB9F /* CollectionPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */; };
 		7F0B7D16249F467D00EBFB9F /* CollectionCellPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */; };
+		7F0B7D1C24A02D2B00EBFB9F /* TableFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B7D1B24A02D2B00EBFB9F /* TableFriend.swift */; };
 		7F17A557249E78D500BE22FB /* TableVCellMyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */; };
 		7F17A55B249E83E000BE22FB /* Добрыня.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A558249E83DF00BE22FB /* Добрыня.png */; };
 		7F17A55C249E83E000BE22FB /* Илья.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A559249E83E000BE22FB /* Илья.png */; };
@@ -16,7 +17,6 @@
 		7F17A563249E90D000BE22FB /* Кони.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A560249E90D000BE22FB /* Кони.png */; };
 		7F17A564249E90D000BE22FB /* Принцессы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A561249E90D000BE22FB /* Принцессы.png */; };
 		7F17A565249E90D000BE22FB /* Драконы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A562249E90D000BE22FB /* Драконы.png */; };
-		7FA7E7CA249DFFB100641F9D /* TableFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7E7C9249DFFB100641F9D /* TableFriend.swift */; };
 		7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */; };
 		7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC04249E3490004770D1 /* oneUser.swift */; };
 		7FD8CC07249E3B01004770D1 /* oneGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC06249E3B01004770D1 /* oneGroup.swift */; };
@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPhoto.swift; sourceTree = "<group>"; };
 		7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellPhoto.swift; sourceTree = "<group>"; };
+		7F0B7D1B24A02D2B00EBFB9F /* TableFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFriend.swift; sourceTree = "<group>"; };
 		7F17A556249E78D500BE22FB /* TableVCellMyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCellMyGroup.swift; sourceTree = "<group>"; };
 		7F17A558249E83DF00BE22FB /* Добрыня.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Добрыня.png"; path = "Lesson1/Model/PhotoUser/Добрыня.png"; sourceTree = SOURCE_ROOT; };
 		7F17A559249E83E000BE22FB /* Илья.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Илья.png"; path = "Lesson1/Model/PhotoUser/Илья.png"; sourceTree = SOURCE_ROOT; };
@@ -41,7 +42,6 @@
 		7F17A560249E90D000BE22FB /* Кони.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Кони.png"; sourceTree = "<group>"; };
 		7F17A561249E90D000BE22FB /* Принцессы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Принцессы.png"; sourceTree = "<group>"; };
 		7F17A562249E90D000BE22FB /* Драконы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Драконы.png"; sourceTree = "<group>"; };
-		7FA7E7C9249DFFB100641F9D /* TableFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableFriend.swift; path = /Users/Jared/Desktop/Swift2/Swift2/lesson1/Lesson1/Lesson1/TableFriend.swift; sourceTree = "<absolute>"; };
 		7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFriend.swift; sourceTree = "<group>"; };
 		7FD8CC04249E3490004770D1 /* oneUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneUser.swift; sourceTree = "<group>"; };
 		7FD8CC06249E3B01004770D1 /* oneGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneGroup.swift; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		7F0B7D12249F457D00EBFB9F /* Friend */ = {
 			isa = PBXGroup;
 			children = (
-				7FA7E7C9249DFFB100641F9D /* TableFriend.swift */,
 				7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */,
 				7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */,
+				7F0B7D1B24A02D2B00EBFB9F /* TableFriend.swift */,
 				7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */,
 			);
 			path = Friend;
@@ -240,11 +240,11 @@
 				7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */,
 				7FD8CC09249E3BF5004770D1 /* TableCellGroup.swift in Sources */,
 				7F17A557249E78D500BE22FB /* TableVCellMyGroup.swift in Sources */,
-				7FA7E7CA249DFFB100641F9D /* TableFriend.swift in Sources */,
 				7FD8CC07249E3B01004770D1 /* oneGroup.swift in Sources */,
 				7FD8CC0D249E4623004770D1 /* TableMyGroup.swift in Sources */,
 				7F0B7D14249F45C000EBFB9F /* CollectionPhoto.swift in Sources */,
 				7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */,
+				7F0B7D1C24A02D2B00EBFB9F /* TableFriend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
