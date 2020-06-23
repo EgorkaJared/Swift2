@@ -10,12 +10,7 @@ import UIKit
 
 class TableAllGroup: UITableViewController {
     
-    
-   
-    let allGroup: [oneGroup] =
-    [oneGroup(groupName: "Драконы",photo:UIImage(named: "Драконы.png")!),
-     oneGroup(groupName: "Принцессы", photo:UIImage(named: "Принцессы.png")!),
-    oneGroup(groupName: "Кони", photo:UIImage(named: "Кони.png")!)]
+    let allGroup = OneGroup.massGroup
 
     override func viewDidLoad() {
         super.viewDidLoad()

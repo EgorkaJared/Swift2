@@ -18,8 +18,8 @@
 		7F17A564249E90D000BE22FB /* Принцессы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A561249E90D000BE22FB /* Принцессы.png */; };
 		7F17A565249E90D000BE22FB /* Драконы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A562249E90D000BE22FB /* Драконы.png */; };
 		7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */; };
-		7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC04249E3490004770D1 /* oneUser.swift */; };
-		7FD8CC07249E3B01004770D1 /* oneGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC06249E3B01004770D1 /* oneGroup.swift */; };
+		7FD8CC05249E3490004770D1 /* OneUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC04249E3490004770D1 /* OneUser.swift */; };
+		7FD8CC07249E3B01004770D1 /* OneGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC06249E3B01004770D1 /* OneGroup.swift */; };
 		7FD8CC09249E3BF5004770D1 /* TableCellGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC08249E3BF5004770D1 /* TableCellGroup.swift */; };
 		7FD8CC0B249E3C7E004770D1 /* TableAllGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC0A249E3C7E004770D1 /* TableAllGroup.swift */; };
 		7FD8CC0D249E4623004770D1 /* TableMyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC0C249E4623004770D1 /* TableMyGroup.swift */; };
@@ -43,8 +43,8 @@
 		7F17A561249E90D000BE22FB /* Принцессы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Принцессы.png"; sourceTree = "<group>"; };
 		7F17A562249E90D000BE22FB /* Драконы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Драконы.png"; sourceTree = "<group>"; };
 		7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFriend.swift; sourceTree = "<group>"; };
-		7FD8CC04249E3490004770D1 /* oneUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneUser.swift; sourceTree = "<group>"; };
-		7FD8CC06249E3B01004770D1 /* oneGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneGroup.swift; sourceTree = "<group>"; };
+		7FD8CC04249E3490004770D1 /* OneUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneUser.swift; sourceTree = "<group>"; };
+		7FD8CC06249E3B01004770D1 /* OneGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneGroup.swift; sourceTree = "<group>"; };
 		7FD8CC08249E3BF5004770D1 /* TableCellGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellGroup.swift; sourceTree = "<group>"; };
 		7FD8CC0A249E3C7E004770D1 /* TableAllGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAllGroup.swift; sourceTree = "<group>"; };
 		7FD8CC0C249E4623004770D1 /* TableMyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMyGroup.swift; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 			children = (
 				7F17A55F249E902300BE22FB /* PhotoGroup */,
 				7FD8CC0E249E5645004770D1 /* PhotoUser */,
-				7FD8CC04249E3490004770D1 /* oneUser.swift */,
-				7FD8CC06249E3B01004770D1 /* oneGroup.swift */,
+				7FD8CC04249E3490004770D1 /* OneUser.swift */,
+				7FD8CC06249E3B01004770D1 /* OneGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,10 +240,10 @@
 				7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */,
 				7FD8CC09249E3BF5004770D1 /* TableCellGroup.swift in Sources */,
 				7F17A557249E78D500BE22FB /* TableVCellMyGroup.swift in Sources */,
-				7FD8CC07249E3B01004770D1 /* oneGroup.swift in Sources */,
+				7FD8CC07249E3B01004770D1 /* OneGroup.swift in Sources */,
 				7FD8CC0D249E4623004770D1 /* TableMyGroup.swift in Sources */,
 				7F0B7D14249F45C000EBFB9F /* CollectionPhoto.swift in Sources */,
-				7FD8CC05249E3490004770D1 /* oneUser.swift in Sources */,
+				7FD8CC05249E3490004770D1 /* OneUser.swift in Sources */,
 				7F0B7D1C24A02D2B00EBFB9F /* TableFriend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

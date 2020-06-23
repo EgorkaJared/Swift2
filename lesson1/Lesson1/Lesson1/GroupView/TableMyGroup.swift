@@ -10,7 +10,7 @@ import UIKit
 
 class TableMyGroup: UITableViewController {
     
-    var myGroop:[oneGroup] = []
+    var myGroop:[OneGroup] = []
     
     
     // перемещение выбраного элемента
