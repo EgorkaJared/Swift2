@@ -161,9 +161,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Друзья" id="d4q-7a-FFC"/>
-                    <connections>
-                        <outlet property="searchBar" destination="GSm-KB-i8w" id="evP-4s-oxW"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kv8-cd-D5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +203,7 @@
                                         <constraint firstItem="MA5-5k-gvl" firstAttribute="width" secondItem="KwV-be-F8Z" secondAttribute="width" id="nCh-Xy-Y7f"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <connections>
                                     <outlet property="photoCell" destination="MA5-5k-gvl" id="7gW-qj-LDa"/>
                                 </connections>
