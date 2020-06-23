@@ -21,7 +21,7 @@ class CollectionPhoto: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -37,13 +37,13 @@ class CollectionPhoto: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
-
+    //  Количество категорий
 //    override func numberOfSections(in collectionView: UICollectionView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
 //        return 0
 //    }
 
-
+   // Количество ячеек
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return photo.count
@@ -57,6 +57,8 @@ class CollectionPhoto: UICollectionViewController {
     
         return cell
     }
+    
+    
 
     // MARK: UICollectionViewDelegate
 

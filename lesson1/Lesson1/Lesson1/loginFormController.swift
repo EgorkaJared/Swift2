@@ -76,7 +76,8 @@ class loginFormController: UIViewController {
              else {
                    return false }
      }
-    
+
+    // Функция которая спрашивает разрешить переход на след экран или нет
   override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
     if identifier == "GoodLogin" {
         let isValed = CheckUserDate()

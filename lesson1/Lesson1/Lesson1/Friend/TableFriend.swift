@@ -8,21 +8,20 @@
 
 import UIKit
 
-class TableFriend: UITableViewController {
+class TableFriend: UITableViewController,UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     let allFriend = OneUser.massFriend
+    // создаем массив для поиска, не забывем поменять везде общий массив на массив поиска и добавить UISearchBarDelegate к классу
+    var searchFriend: [OneUser] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //убираем ошибку конфликтов констрейнов
         self.tableView.rowHeight = 44
+        searchFriend = allFriend
         
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -34,7 +33,7 @@ class TableFriend: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return allFriend.count
+        return searchFriend.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,10 +41,10 @@ class TableFriend: UITableViewController {
         TableCellFriend
 
         // Configure the cell...
-        cell.nameFriend.text = ("\(allFriend[indexPath.row].firstName) \(allFriend[indexPath.row].lastName)")
+        cell.nameFriend.text = ("\(searchFriend[indexPath.row].firstName) \(searchFriend[indexPath.row].lastName)")
 //        cell.photoFriend.image. = ("\(allFriend[indexPath.row].photo)")
 
-        cell.photoFriend.image = (allFriend[indexPath.row].photo)
+        cell.photoFriend.image = (searchFriend[indexPath.row].photo)
         return cell
     }
 
@@ -89,15 +88,32 @@ class TableFriend: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    // функция передачи фото пользователя в колекцию(нас ледующий экран) 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
+            //проверка на какой экрвн переходим
             let photo = segue.destination as?
             CollectionPhoto,
+            //получаем индекс нажанай ячейки
             let indexPhoto = self.tableView.indexPathForSelectedRow
             else {return}
-        
-        photo.photo = allFriend[indexPhoto.row].allPhoto
+        //получаем индекс друга из массива равный индкусу ячейки
+        let friend = allFriend[indexPhoto.row]
+        // присваеваем массиву фото значение массива из класса друга
+        photo.photo = friend.allPhoto
         // Pass the selected object to the new view controller.
+    }
+    // функция рабоыт поиска
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            searchFriend = allFriend
+        }
+        else
+        {
+            searchFriend = allFriend.filter {$0.firstName.lowercased().contains(searchText.lowercased()) || $0.lastName.lowercased().contains(searchText.lowercased()) }
+        }
+        tableView.reloadData()
     }
     
 }
