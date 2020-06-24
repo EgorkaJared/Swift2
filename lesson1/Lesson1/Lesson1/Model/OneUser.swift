@@ -22,7 +22,7 @@ class OneUser {
     OneUser(firstName: "Илья", lastName: "Муромец", photo: UIImage(named: "Илья.png")!,allPhoto: ilia)
     ]
     
-    static let dobrynia = [UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png" )!]
+    static let dobrynia = [UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Кони.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png")!,UIImage(named: "Добрыня.png" )!]
 
     static let alesha = [UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,UIImage(named: "Алеша.png")!,]
 

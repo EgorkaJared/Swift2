@@ -17,6 +17,7 @@
 		7F17A563249E90D000BE22FB /* Кони.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A560249E90D000BE22FB /* Кони.png */; };
 		7F17A564249E90D000BE22FB /* Принцессы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A561249E90D000BE22FB /* Принцессы.png */; };
 		7F17A565249E90D000BE22FB /* Драконы.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F17A562249E90D000BE22FB /* Драконы.png */; };
+		7FBC5A0E24A3C203008179DA /* OnePhotoFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC5A0D24A3C203008179DA /* OnePhotoFriend.swift */; };
 		7FD8CC02249E2CEE004770D1 /* TableCellFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */; };
 		7FD8CC05249E3490004770D1 /* OneUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC04249E3490004770D1 /* OneUser.swift */; };
 		7FD8CC07249E3B01004770D1 /* OneGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8CC06249E3B01004770D1 /* OneGroup.swift */; };
@@ -42,6 +43,7 @@
 		7F17A560249E90D000BE22FB /* Кони.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Кони.png"; sourceTree = "<group>"; };
 		7F17A561249E90D000BE22FB /* Принцессы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Принцессы.png"; sourceTree = "<group>"; };
 		7F17A562249E90D000BE22FB /* Драконы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Драконы.png"; sourceTree = "<group>"; };
+		7FBC5A0D24A3C203008179DA /* OnePhotoFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePhotoFriend.swift; sourceTree = "<group>"; };
 		7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFriend.swift; sourceTree = "<group>"; };
 		7FD8CC04249E3490004770D1 /* OneUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneUser.swift; sourceTree = "<group>"; };
 		7FD8CC06249E3B01004770D1 /* OneGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneGroup.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				7FD8CC01249E2CEE004770D1 /* TableCellFriend.swift */,
 				7F0B7D15249F467D00EBFB9F /* CollectionCellPhoto.swift */,
+				7FBC5A0D24A3C203008179DA /* OnePhotoFriend.swift */,
 				7F0B7D1B24A02D2B00EBFB9F /* TableFriend.swift */,
 				7F0B7D13249F45C000EBFB9F /* CollectionPhoto.swift */,
 			);
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F0B7D16249F467D00EBFB9F /* CollectionCellPhoto.swift in Sources */,
+				7FBC5A0E24A3C203008179DA /* OnePhotoFriend.swift in Sources */,
 				7FDB3DA6249257DD002B6620 /* AppDelegate.swift in Sources */,
 				7FDB3DA8249257DD002B6620 /* SceneDelegate.swift in Sources */,
 				7FD8CC0B249E3C7E004770D1 /* TableAllGroup.swift in Sources */,

@@ -102,7 +102,7 @@ class TableFriend: UITableViewController,UISearchBarDelegate {
         //получаем индекс друга из массива равный индкусу ячейки
         let friend = allFriend[indexPhoto.row]
         // присваеваем массиву фото значение массива из класса друга
-        photo.photo = friend.allPhoto
+        photo.photoMass = friend.allPhoto
         // Pass the selected object to the new view controller.
     }
     // функция рабоыт поиска

@@ -206,6 +206,7 @@
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <connections>
                                     <outlet property="photoCell" destination="MA5-5k-gvl" id="7gW-qj-LDa"/>
+                                    <segue destination="c7W-ab-qGN" kind="push" id="2UH-0X-AiE"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -219,6 +220,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wWq-DE-gND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4415.9420289855079" y="-6.0267857142857144"/>
+        </scene>
+        <!--One Photo Friend-->
+        <scene sceneID="hda-QR-3aD">
+            <objects>
+                <viewController id="c7W-ab-qGN" customClass="OnePhotoFriend" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9JR-H6-oNk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wrP-KS-wak">
+                                <rect key="frame" x="0.0" y="56" width="414" height="414"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wrP-KS-wak" secondAttribute="height" multiplier="1:1" id="8NF-nL-7XQ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Hh-9c-cQU" appends="YES" id="Eea-EX-p5c"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8V-Qk-wUS">
+                                <rect key="frame" x="13" y="478" width="33.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w8V-Qk-wUS" secondAttribute="height" multiplier="23:15" id="gCb-El-oWE"/>
+                                </constraints>
+                                <state key="normal" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="likeBottom:" destination="c7W-ab-qGN" eventType="touchUpInside" id="gIT-Fp-Z8x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COB-Gw-wKJ">
+                                <rect key="frame" x="51.5" y="478" width="0.0" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wrP-KS-wak" firstAttribute="top" secondItem="mPh-j2-Ezg" secondAttribute="top" id="4UK-ao-S7a"/>
+                            <constraint firstItem="COB-Gw-wKJ" firstAttribute="top" secondItem="wrP-KS-wak" secondAttribute="bottom" constant="8" id="68O-RS-KTk"/>
+                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="leading" secondItem="mPh-j2-Ezg" secondAttribute="leading" constant="13" id="Hw7-wr-fQD"/>
+                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="top" secondItem="wrP-KS-wak" secondAttribute="bottom" constant="8" id="KL9-Ce-MkV"/>
+                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="width" multiplier="0.1" id="VHl-rS-qth"/>
+                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="height" multiplier="23:421" id="aCg-gV-c2f"/>
+                            <constraint firstItem="wrP-KS-wak" firstAttribute="centerX" secondItem="mPh-j2-Ezg" secondAttribute="centerX" id="dJi-ct-80B"/>
+                            <constraint firstItem="wrP-KS-wak" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="width" id="e99-rZ-cUW"/>
+                            <constraint firstItem="COB-Gw-wKJ" firstAttribute="height" secondItem="w8V-Qk-wUS" secondAttribute="height" multiplier="0.954545" id="lec-t9-xNK"/>
+                            <constraint firstItem="COB-Gw-wKJ" firstAttribute="leading" secondItem="w8V-Qk-wUS" secondAttribute="trailing" constant="5" id="zgH-yZ-uk3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mPh-j2-Ezg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kf0-q0-8Y0"/>
+                    <connections>
+                        <outlet property="likeLAbel" destination="COB-Gw-wKJ" id="afG-fi-kBI"/>
+                        <outlet property="lokeBottomCollor" destination="w8V-Qk-wUS" id="Dgm-8b-tEG"/>
+                        <outlet property="onePhoto" destination="wrP-KS-wak" id="JXL-6q-NF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1d-hb-dI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9Hh-9c-cQU"/>
+            </objects>
+            <point key="canvasLocation" x="5362.3188405797109" y="-6.0267857142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tQT-UR-zaQ">
@@ -257,7 +320,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUT-aZ-vuM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521.739130434783" y="-6.0267857142857144"/>
+            <point key="canvasLocation" x="2522" y="-6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Ws-mE-Trp">
@@ -399,6 +462,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
     </resources>
 </document>

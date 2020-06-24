@@ -16,6 +16,7 @@ class TableVCellMyGroup: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        
         MyGropuPhoto.layer.cornerRadius = MyGropuPhoto.bounds.height/2
         // Initialization code
     }

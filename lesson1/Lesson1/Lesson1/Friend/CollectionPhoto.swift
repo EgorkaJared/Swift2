@@ -12,7 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class CollectionPhoto: UICollectionViewController {
 
-    var photo:[UIImage?] = []
+    var photoMass:[UIImage?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,17 +39,31 @@ class CollectionPhoto: UICollectionViewController {
    // Количество ячеек
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return photo.count
+        return photoMass.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCellPhoto", for: indexPath) as! CollectionCellPhoto
         
-        cell.photoCell.image = photo[indexPath.row]
+        cell.photoCell.image = photoMass[indexPath.row]
        
     
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          guard
+              //проверка на какой экрвн переходим
+            let secondView = segue.destination as?
+              OnePhotoFriend,
+            
+            let indexPhoto = self.collectionView.indexPathsForSelectedItems
+              else {return}
+
+        secondView.bigPhoto = photoMass[indexPhoto.first!.row]!
+         
+          // Pass the selected object to the new view controller.
+      }
     
     
 
