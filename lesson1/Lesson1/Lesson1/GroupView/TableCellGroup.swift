@@ -18,7 +18,7 @@ class TableCellGroup: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+         groupPhoto.layer.cornerRadius = groupPhoto.bounds.height/2
         
         // Initialization code
     }

@@ -22,6 +22,7 @@ class TableFriend: UITableViewController,UISearchBarDelegate {
         self.tableView.rowHeight = 44
         searchFriend = allFriend
         
+        
     }
 
     // MARK: - Table view data source
