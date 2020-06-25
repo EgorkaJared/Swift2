@@ -11,13 +11,15 @@ import UIKit
 class TableCellFriend: UITableViewCell {
 
     @IBOutlet weak var nameFriend: UILabel!
-    @IBOutlet weak var photoFriend: UIImageView!
+    
+    @IBOutlet weak var photoFriend: Avatar!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        photoFriend.layer.cornerRadius = photoFriend.bounds.height/2
+        //photoFriend.layer.cornerRadius = photoFriend.bounds.height/2
+        //photoFriend.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

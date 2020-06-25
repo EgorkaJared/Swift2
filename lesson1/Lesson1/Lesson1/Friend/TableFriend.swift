@@ -45,7 +45,7 @@ class TableFriend: UITableViewController,UISearchBarDelegate {
         cell.nameFriend.text = ("\(searchFriend[indexPath.row].firstName) \(searchFriend[indexPath.row].lastName)")
 //        cell.photoFriend.image. = ("\(allFriend[indexPath.row].photo)")
 
-        cell.photoFriend.image = (searchFriend[indexPath.row].photo)
+        cell.photoFriend.imageView.image = (searchFriend[indexPath.row].photo)
         return cell
     }
 

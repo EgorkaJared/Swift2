@@ -14,6 +14,7 @@ class OnePhotoFriend: UIViewController {
     var bigPhoto = UIImage()
     
     
+    @IBOutlet var likeControll: UIView!
     @IBAction func likeBottom(_ sender: Any) {
         
         if lokeBottomCollor.tintColor != UIColor.red {
@@ -22,10 +23,14 @@ class OnePhotoFriend: UIViewController {
             likeLAbel.text = String(countLike + 1)
             likeLAbel.textColor = UIColor.red
         }
-        else {
+        else if likeLAbel.text != "1"{
             lokeBottomCollor.tintColor = UIColor.blue
             likeLAbel.text = String(Int(likeLAbel.text!)!-1)
             likeLAbel.textColor = UIColor.blue
+        }
+        else {
+            lokeBottomCollor.tintColor = UIColor.blue
+            likeLAbel.text = ""
             
         }
     }
