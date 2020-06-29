@@ -14,6 +14,7 @@ class LikeContoll: UIControl{
     //MARK - View
     
     var likeButtom: UIButton!
+    
     //var likeLabel: UILabel = UILabel()
     
     //MARK - init
@@ -38,8 +39,9 @@ class LikeContoll: UIControl{
         likeButtom.setImage(UIImage(systemName: "heart"), for: .normal)
         likeButtom.addTarget(self, action: #selector(selectLike(_:)), for: .touchUpInside)
         likeButtom.tintColor = UIColor.black
+//        likeButtom.titleEdgeInsets = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+//        likeButtom.imageEdgeInsets = UIEdgeInsets(top: 20, left: -0, bottom: 0, right: 0)
         
-         
         addSubview(likeButtom)
     }
     
@@ -47,7 +49,7 @@ class LikeContoll: UIControl{
          if likeButtom.tintColor != UIColor.red {
                 likeButtom.tintColor = UIColor.red
             let countlike = likeButtom.title(for: .normal)!
-            let  count = (Int(countlike) ?? 0) + 1
+            let  count = (Int(countlike) ?? 0) + 100000
             likeButtom.setTitle(String(count), for: .normal)
             }
                

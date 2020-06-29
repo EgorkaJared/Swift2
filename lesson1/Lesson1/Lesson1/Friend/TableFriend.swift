@@ -12,14 +12,15 @@ class TableFriend: UITableViewController,UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    let allFriend = OneUser.massFriend
+    var allFriend = OneUser.massFriend
     // создаем массив для поиска, не забывем поменять везде общий массив на массив поиска и добавить UISearchBarDelegate к классу
     var searchFriend: [OneUser] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //убираем ошибку конфликтов констрейнов
         self.tableView.rowHeight = 44
+        allFriend.sort (by: {$0.lastName < $1.lastName})
         searchFriend = allFriend
         
         

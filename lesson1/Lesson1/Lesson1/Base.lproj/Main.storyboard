@@ -118,7 +118,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellFriend" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-VX-uDF" customClass="TableCellFriend" customModule="Lesson1" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellFriend" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-VX-uDF" customClass="TableCellFriend" customModule="Lesson1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPo-VX-uDF" id="1Ok-kG-BzV">
@@ -245,28 +245,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wrP-KS-wak" secondAttribute="height" multiplier="1:1" id="8NF-nL-7XQ"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="9Hh-9c-cQU" appends="YES" id="Eea-EX-p5c"/>
-                                </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8V-Qk-wUS">
-                                <rect key="frame" x="13" y="478" width="33.5" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="w8V-Qk-wUS" secondAttribute="height" multiplier="23:15" id="gCb-El-oWE"/>
-                                </constraints>
-                                <state key="normal" image="heart" catalog="system"/>
-                                <connections>
-                                    <action selector="likeBottom:" destination="c7W-ab-qGN" eventType="touchUpInside" id="gIT-Fp-Z8x"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COB-Gw-wKJ">
-                                <rect key="frame" x="51.5" y="478" width="0.0" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-2x-LUe" customClass="LikeContoll" customModule="Lesson1" customModuleProvider="target">
-                                <rect key="frame" x="20" y="510" width="103.5" height="26"/>
+                                <rect key="frame" x="20" y="480" width="103.5" height="26"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zvV-2x-LUe" secondAttribute="height" multiplier="4:1" id="Z67-eD-SrI"/>
@@ -276,31 +257,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wrP-KS-wak" firstAttribute="top" secondItem="mPh-j2-Ezg" secondAttribute="top" id="4UK-ao-S7a"/>
-                            <constraint firstItem="COB-Gw-wKJ" firstAttribute="top" secondItem="wrP-KS-wak" secondAttribute="bottom" constant="8" id="68O-RS-KTk"/>
                             <constraint firstItem="zvV-2x-LUe" firstAttribute="leading" secondItem="mPh-j2-Ezg" secondAttribute="leading" constant="20" id="B3x-cV-pQ4"/>
-                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="leading" secondItem="mPh-j2-Ezg" secondAttribute="leading" constant="13" id="Hw7-wr-fQD"/>
-                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="top" secondItem="wrP-KS-wak" secondAttribute="bottom" constant="8" id="KL9-Ce-MkV"/>
                             <constraint firstItem="zvV-2x-LUe" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="width" multiplier="0.25" id="OUU-bd-Xyp"/>
-                            <constraint firstItem="zvV-2x-LUe" firstAttribute="top" secondItem="w8V-Qk-wUS" secondAttribute="bottom" constant="10" id="U8d-QS-A7g"/>
-                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="width" multiplier="0.1" id="VHl-rS-qth"/>
-                            <constraint firstItem="w8V-Qk-wUS" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="height" multiplier="23:421" id="aCg-gV-c2f"/>
                             <constraint firstItem="wrP-KS-wak" firstAttribute="centerX" secondItem="mPh-j2-Ezg" secondAttribute="centerX" id="dJi-ct-80B"/>
                             <constraint firstItem="wrP-KS-wak" firstAttribute="width" secondItem="9JR-H6-oNk" secondAttribute="width" id="e99-rZ-cUW"/>
-                            <constraint firstItem="COB-Gw-wKJ" firstAttribute="height" secondItem="w8V-Qk-wUS" secondAttribute="height" multiplier="0.954545" id="lec-t9-xNK"/>
-                            <constraint firstItem="COB-Gw-wKJ" firstAttribute="leading" secondItem="w8V-Qk-wUS" secondAttribute="trailing" constant="5" id="zgH-yZ-uk3"/>
+                            <constraint firstItem="zvV-2x-LUe" firstAttribute="top" secondItem="wrP-KS-wak" secondAttribute="bottom" constant="10" id="oB2-Sd-fDs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mPh-j2-Ezg"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kf0-q0-8Y0"/>
                     <connections>
                         <outlet property="likeControll" destination="9JR-H6-oNk" id="39P-g5-RoW"/>
-                        <outlet property="likeLAbel" destination="COB-Gw-wKJ" id="afG-fi-kBI"/>
-                        <outlet property="lokeBottomCollor" destination="w8V-Qk-wUS" id="Dgm-8b-tEG"/>
                         <outlet property="onePhoto" destination="wrP-KS-wak" id="JXL-6q-NF2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1d-hb-dI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="9Hh-9c-cQU"/>
             </objects>
             <point key="canvasLocation" x="5362.3188405797109" y="-6.0267857142857144"/>
         </scene>
@@ -483,7 +454,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
     </resources>
